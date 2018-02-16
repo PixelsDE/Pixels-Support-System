@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Class-Path: PSS
+PSS-Class: Main
+Main-Class: Main
+

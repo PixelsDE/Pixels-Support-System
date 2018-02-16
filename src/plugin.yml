@@ -1,0 +1,78 @@
+main: de.bypixels.pss.pss.Main
+author: PixelsDE
+name: Pixels-Support-System
+version: 3.0.0
+description: Pixels-Support-System is a simple Tool for Server-Admins
+
+commands:
+  gui:
+    description: Opens the Pixels-Support-System Gui!
+  mute:
+    description: Mutes a Player! Do /mute <player>
+  unmute:
+    description: Unmutes a Player! Do /unmute <player>
+  joinmessage:
+    description: Activates or Deactivates the Joinmessages!
+  pss:
+    description: Gives you general information about the Plugin!
+    aliases: [info, pixels]
+  crash:
+    description: Crashes a Player Client! <player>
+    aliases: [shut]
+  chest:
+    description: Saves your Inventory!
+    aliases: [backpack, vault]
+  invsee:
+    description: Lets you the a Player-Inventory! Do /invsee <player>
+    aliases: [inventorysee]
+  hide:
+   description: Will Hide all Players!
+  show:
+    description: Will Show all Players!
+  vanish:
+    description: Makes you getting Vanish! Do /vanish <player>
+    aliases: [v]
+  deathmessage:
+    description: Activates and Deactivates the Deathmessages!
+  lag:
+    description: Checks the TPS!
+  maintenance:
+    description: Activates or Deactivates the Maintenance-Mode!
+  gm:
+    description: Changes your Gamemode! Do /gm <player>
+  fly:
+    description: Changes your CMDfly-Mode! Do /fly <player>
+  chat:
+    description: Clears the Chat!
+  heal:
+    descriptioN: Heals you and all Players! Do /heal <all> or /heal <player>
+  build:
+    description: You can build an break Blocks! Doo /build <player>
+    aliases: [building]
+  godmode:
+    description: Sets you or an other Player in GodMode! Do /godmode <player>
+    aliases: [god]
+  players:
+    description: Lists all Players!
+    aliases: [player]
+  msg:
+    description: Lets you hat with a Player! Do /msg <player> <message>
+    aliases: [message, tell, send]
+  lag:
+    description:  Checks for Lags!
+  clearlag:
+    description: Clears the Lags!
+    aliases: [cl]
+  socialspy:
+    description: Allows you to socialspy!
+    aliases: [spy]
+  ping:
+    description: Allows you to check your and others Ping! Do /ping <player>
+    aliases: [p]
+  pvp:
+    description: Sets the Server-PvP to true or false!
+  config:
+    description: Reloads the Files of the Plugin!
+  setcmd:
+    description: Sets the Config of a Command! Do /setcmd <Config Command> <boolean>
+    
