@@ -3,7 +3,7 @@ package de.bypixels.pss.onoff;
 /*     */
 /*     */
 
-import de.bypixels.pss.commands.CMDmute;
+import de.bypixels.pss.commands.CMDMute;
 import de.bypixels.pss.pss.Main;
 import de.bypixels.pss.util.Messages;
 import org.bukkit.Bukkit;
@@ -64,9 +64,9 @@ import org.bukkit.event.inventory.InventoryClickEvent;
                             /*  36 */
                        for (Player all : Bukkit.getOnlinePlayers()){
                            if (!all.equals(player)){
-                               CMDmute.muted.remove(all);
-                               CMDmute.cfg.set(all.getName(), false);
-                               CMDmute.cfg.save(CMDmute.file);
+                               CMDMute.muted.remove(all);
+                               CMDMute.cfg.set(all.getName(), false);
+                               CMDMute.cfg.save(CMDMute.file);
                                String msg = Main.prefix + Messages.cfg.getString("mute6");
                                /*  44 */
                            all.getPlayer().sendMessage(ChatColor.translateAlternateColorCodes('&', msg));
@@ -129,11 +129,11 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 
                                 /*     */ for (Player all : Bukkit.getOnlinePlayers()){
                                     if (!all.equals(player)){
-                                        CMDmute.muted.add(all);
+                                        CMDMute.muted.add(all);
                                         String msg = Main.prefix + Messages.cfg.getString("mute2");
 
-                                        CMDmute.cfg.set(all.getName(), true);
-                                        CMDmute.cfg.save(CMDmute.file);
+                                        CMDMute.cfg.set(all.getName(), true);
+                                        CMDMute.cfg.save(CMDMute.file);
                                         all.sendMessage(ChatColor.translateAlternateColorCodes('&', msg));
 
                                     }

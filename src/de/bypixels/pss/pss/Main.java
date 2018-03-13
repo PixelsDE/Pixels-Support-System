@@ -59,7 +59,7 @@ import java.util.ArrayList;
         EVENTPlayers.setCfg();
         Settings.setSettings();
         Messages.setMessages();
-        CMDmute.setmutes();
+        CMDMute.setmutes();
         CMDchest.setbackpack();
         if (Settings.cfg.getBoolean("workmode") == true){
             wartung = true;
@@ -94,13 +94,13 @@ import java.util.ArrayList;
         /*  46 */
         getCommand("gui").setExecutor(new StartGUI(this));
         /*  47 */
-        getCommand("mute").setExecutor(new CMDmute(this));
+        getCommand("mute").setExecutor(new CMDMute(this));
         /*  48 */
         getCommand("unmute").setExecutor(new CMDunmute(this));
         /*  49 */
-        getCommand("joinmessage").setExecutor(new CMDjoinmessage(this));
+        getCommand("joinmessage").setExecutor(new CMDJoinMessage(this));
         /*  50 */
-        getCommand("pss").setExecutor(new CMDinfo(this));
+        getCommand("pss").setExecutor(new CMDInfo(this));
 
         getCommand("setcmd").setExecutor(new CMDsetcmd(this));
         /*  51 */
@@ -116,7 +116,7 @@ import java.util.ArrayList;
         /*  55 */
         getCommand("hide").setExecutor(new CMDshow(this));
         /*  56 */
-        getCommand("vanish").setExecutor(new CMDvanish(this));
+        getCommand("vanish").setExecutor(new CMDVanish(this));
 
         getCommand("pvp").setExecutor(new CMDpvp(this));
         /*  57 */
@@ -124,7 +124,7 @@ import java.util.ArrayList;
 
         getCommand("clearlag").setExecutor(new CMDclearlag(this));
 
-        getCommand("maintenance").setExecutor(new CMDmaintenancemode(this));
+        getCommand("maintenance").setExecutor(new CMDMaintenanceMode(this));
         /*  58 */
         getCommand("gm").setExecutor(new CMDgm(this));
         /*  59 */
@@ -132,19 +132,20 @@ import java.util.ArrayList;
         /*  60 */
         getCommand("chat").setExecutor(new CMDchat(this));
         /*  61 */
-        getCommand("heal").setExecutor(new CMDheal(this));
+        getCommand("heal").setExecutor(new CMDHeal(this));
         /*  62 */
-        getCommand("build").setExecutor(new CMDbuild(this));
+        getCommand("build").setExecutor(new CMDBuild(this));
         /*  63 */
         getCommand("godmode").setExecutor(new CMDgodmode(this));
         /*  64 */
-        getCommand("players").setExecutor(new CMDplayers(this));
+        getCommand("players").setExecutor(new CMDPlayers(this));
         /*     */
         getCommand("deathmessage").setExecutor(new CMDdeathmessage(this));
 //
         getCommand("msg").setExecutor(new CMDmsg(this));
 
-        getCommand("ping").setExecutor(new CMDping(this));
+        getCommand("ping").setExecutor(new CMDPing(this));
+
 
         getCommand("socialspy").setExecutor(new CMDsocialspy(this));
         /*  66 */
@@ -190,13 +191,13 @@ import java.util.ArrayList;
         YamlConfiguration cfg = YamlConfiguration.loadConfiguration(Settings.file);
         YamlConfiguration cfg1 = YamlConfiguration.loadConfiguration(Messages.file);
         YamlConfiguration cfg2 = YamlConfiguration.loadConfiguration(CMDchest.file);
-        YamlConfiguration cfg3 = YamlConfiguration.loadConfiguration(CMDmute.file);
+        YamlConfiguration cfg3 = YamlConfiguration.loadConfiguration(CMDMute.file);
         YamlConfiguration cfg4 = YamlConfiguration.loadConfiguration(EVENTPlayers.file);
 
         try {
             cfg.load(Settings.file);
             cfg1.load(Messages.file);
-            cfg2.load(CMDmute.file);
+            cfg2.load(CMDMute.file);
             cfg3.load(CMDchest.file);
             cfg4.load(EVENTPlayers.file);
         } catch (IOException e) {

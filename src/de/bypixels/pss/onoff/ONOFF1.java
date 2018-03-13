@@ -1,7 +1,7 @@
 package de.bypixels.pss.onoff;
 
 
-import de.bypixels.pss.commands.CMDvanish;
+import de.bypixels.pss.commands.CMDVanish;
 import de.bypixels.pss.pss.Main;
 import de.bypixels.pss.util.Messages;
 import org.bukkit.Bukkit;

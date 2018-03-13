@@ -1,6 +1,6 @@
 /*    */ package de.bypixels.pss.CMDevents;
 /*    */ 
-/*    */ import de.bypixels.pss.commands.CMDvanish;
+/*    */ import de.bypixels.pss.commands.CMDVanish;
 /*    */ import de.bypixels.pss.pss.Main;
 /*    */
 /*    */ import org.bukkit.Bukkit;
@@ -25,7 +25,7 @@
 /*    */   public void onJoin(PlayerJoinEvent event) {
 /* 26 */     Player p = event.getPlayer();
 /* 27 */     for (Player players : Bukkit.getOnlinePlayers()) {
-/* 28 */       if (CMDvanish.vanishList.contains(players))
+/* 28 */       if (CMDVanish.vanishList.contains(players))
 /*    */       {
 /* 30 */
 /* 31 */         p.hidePlayer(players);

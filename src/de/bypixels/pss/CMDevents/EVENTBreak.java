@@ -3,7 +3,8 @@ package de.bypixels.pss.CMDevents;
 /*    */
 /*    */
 
-import de.bypixels.pss.commands.CMDbuild;
+import de.bypixels.pss.commands.CMDBuild;
+
 import de.bypixels.pss.pss.Main;
 import de.bypixels.pss.util.Messages;
 import org.bukkit.ChatColor;
@@ -31,7 +32,7 @@ import org.bukkit.event.block.BlockPlaceEvent;
         /* 23 */
         Player player = event.getPlayer();
         /* 24 */
-        if (!CMDbuild.buildlist.contains(player))
+        if (!CMDBuild.buildlist.contains(player))
             /*    */ {
             event.setCancelled(true);
             String msg = Main.prefix + Messages.cfg.getString("build5").replace("%block%", event.getBlock().getType().toString());
@@ -50,7 +51,7 @@ import org.bukkit.event.block.BlockPlaceEvent;
         /* 33 */        event.setCancelled(true);
         Player player = event.getPlayer();
         /* 34 */
-        if (!CMDbuild.buildlist.contains(player))
+        if (!CMDBuild.buildlist.contains(player))
             /*    */ {
             /* 36 */
             event.setCancelled(true);
