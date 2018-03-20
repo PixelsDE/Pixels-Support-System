@@ -3,7 +3,7 @@ package de.bypixels.pss.CMDevents;
 /*    */
 /*    */
 
-import de.bypixels.pss.commands.CMDmute;
+import de.bypixels.pss.commands.CMDMute;
 import de.bypixels.pss.pss.Main;
 import de.bypixels.pss.util.Messages;
 import org.bukkit.ChatColor;
@@ -43,7 +43,7 @@ import org.bukkit.event.player.AsyncPlayerChatEvent;
         /* 26 */
         Player p = event.getPlayer();
         /* 27 */
-        if (CMDmute.muted.contains(p) || CMDmute.cfg.getBoolean(p.getName()) == true)  {
+        if (CMDMute.muted.contains(p) || CMDMute.cfg.getBoolean(p.getName()) == true)  {
             /* 29 */
             String msg = Main.prefix + Messages.cfg.getString("mute4");
             /*    */

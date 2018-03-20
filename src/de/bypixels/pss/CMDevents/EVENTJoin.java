@@ -1,6 +1,6 @@
 /*    */ package de.bypixels.pss.CMDevents;
 /*    */ 
-/*    */ import de.bypixels.pss.commands.CMDjoinmessage;
+/*    */ import de.bypixels.pss.commands.CMDJoinMessage;
 /*    */
 import de.bypixels.pss.pss.Main;
 /*    */
@@ -25,7 +25,7 @@ import de.bypixels.pss.pss.Main;
 /*    */   public void onJoin(PlayerJoinEvent event)
 /*    */   {
 /* 26 */     Player p = event.getPlayer();
-/* 27 */     if (!CMDjoinmessage.joinp.contains(CMDjoinmessage.MSG))
+/* 27 */     if (!CMDJoinMessage.joinp.contains(CMDJoinMessage.MSG))
 /*    */     {
 /* 29 */       event.setJoinMessage(null);
 /*    */       
@@ -39,7 +39,7 @@ import de.bypixels.pss.pss.Main;
 /*    */   public void onJoin(PlayerQuitEvent event)
 /*    */   {
 /* 40 */     Player p = event.getPlayer();
-/* 41 */     if (!CMDjoinmessage.joinp.contains(CMDjoinmessage.MSG))
+/* 41 */     if (!CMDJoinMessage.joinp.contains(CMDJoinMessage.MSG))
 /*    */     {
 /* 43 */       event.setQuitMessage(null);
 /*    */       

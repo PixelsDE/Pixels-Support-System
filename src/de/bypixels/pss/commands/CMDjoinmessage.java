@@ -25,17 +25,14 @@ import java.util.ArrayList;
 /*    */
 /*    */
 /*    */
-/*    */
-/*    */ public class CMDjoinmessage
-        /*    */ implements CommandExecutor
-        /*    */ {
+/*    */ public class CMDJoinMessage  implements CommandExecutor       {
     /*    */
     /* 25 */   public static String MSG = new String("Test");
     /* 26 */   public static ArrayList<String> joinp = new ArrayList();
     /*    */   private Main plugin;
     /*    */
     /*    */
-    public CMDjoinmessage(Main plugin)
+    public CMDJoinMessage(Main plugin)
     /*    */ {
         /* 22 */
         this.plugin = plugin;
@@ -68,13 +65,13 @@ import java.util.ArrayList;
                             return true;
                             /*    */
                         }else{
-                        String msg = Main.prefix + Messages.cfg.getString("join2");
-                        /* 42 */
-                        joinp.remove(MSG);
-                        /* 43 */
-                        p.getPlayer().sendMessage(ChatColor.translateAlternateColorCodes('&', msg));
-                        /* 44 */
-                        return true;}
+                            String msg = Main.prefix + Messages.cfg.getString("join2");
+                            /* 42 */
+                            joinp.remove(MSG);
+                            /* 43 */
+                            p.getPlayer().sendMessage(ChatColor.translateAlternateColorCodes('&', msg));
+                            /* 44 */
+                            return true;}
                         /*    */
                     }
                     /* 46 */

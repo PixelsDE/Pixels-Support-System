@@ -37,11 +37,11 @@ import org.bukkit.Bukkit;
 /* 33 */             if (args.length == 1) {
 /* 34 */               Player mute = Bukkit.getPlayer(args[0]);
 /* 35 */               if (mute != null) {
-/* 36 */                 if (CMDmute.muted.contains(mute) || CMDmute.cfg.getBoolean(mute.getName()) == true) {
-/* 37 */                   CMDmute.muted.remove(mute);
-                                     CMDmute.cfg.set(mute.getName(), false);
+/* 36 */                 if (CMDMute.muted.contains(mute) || CMDMute.cfg.getBoolean(mute.getName()) == true) {
+/* 37 */                   CMDMute.muted.remove(mute);
+                                     CMDMute.cfg.set(mute.getName(), false);
                                      try {
-                                         CMDmute.cfg.save(CMDmute.file);
+                                         CMDMute.cfg.save(CMDMute.file);
                                      } catch (IOException e) {
                                          e.printStackTrace();
                                      }
@@ -74,15 +74,15 @@ import org.bukkit.Bukkit;
                         /* 35 */
                         if (mute != null) {
                             /* 36 */
-                            if (CMDmute.muted.contains(mute)) {
+                            if (CMDMute.muted.contains(mute)) {
                                 /* 37 */
-                                CMDmute.cfg.set(mute.getName(), false);
+                                CMDMute.cfg.set(mute.getName(), false);
                                 try {
-                                    CMDmute.cfg.save(CMDmute.file);
+                                    CMDMute.cfg.save(CMDMute.file);
                                 } catch (IOException e) {
                                     e.printStackTrace();
                                 }
-                                CMDmute.muted.remove(mute);
+                                CMDMute.muted.remove(mute);
                                 /* 38 */
                                 String msg1 = Main.prefix + Messages.cfg.getString("unmute1").replace("%player%", mute.getName());
                                 /* 39 */

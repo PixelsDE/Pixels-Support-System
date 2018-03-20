@@ -46,14 +46,14 @@ public class CMDreload implements CommandExecutor{
                         YamlConfiguration cfg = YamlConfiguration.loadConfiguration(Settings.file);
                         YamlConfiguration cfg1 = YamlConfiguration.loadConfiguration(Messages.file);
                         YamlConfiguration cfg2 = YamlConfiguration.loadConfiguration(CMDchest.file);
-                        YamlConfiguration cfg3 = YamlConfiguration.loadConfiguration(CMDmute.file);
+                        YamlConfiguration cfg3 = YamlConfiguration.loadConfiguration(CMDMute.file);
                         YamlConfiguration cfg4 = YamlConfiguration.loadConfiguration(EVENTPlayers.file);
 
 
                         try {
                             cfg.load(Settings.file);
                             cfg1.load(Messages.file);
-                            cfg2.load(CMDmute.file);
+                            cfg2.load(CMDMute.file);
                             cfg3.load(CMDchest.file);
                             cfg4.load(EVENTPlayers.file);
                         } catch (IOException e) {
@@ -76,13 +76,13 @@ public class CMDreload implements CommandExecutor{
                     YamlConfiguration cfg = YamlConfiguration.loadConfiguration(Settings.file);
                     YamlConfiguration cfg1 = YamlConfiguration.loadConfiguration(Messages.file);
                     YamlConfiguration cfg2 = YamlConfiguration.loadConfiguration(CMDchest.file);
-                    YamlConfiguration cfg3 = YamlConfiguration.loadConfiguration(CMDmute.file);
+                    YamlConfiguration cfg3 = YamlConfiguration.loadConfiguration(CMDMute.file);
                     YamlConfiguration cfg4 = YamlConfiguration.loadConfiguration(EVENTPlayers.file);
 
                     try {
                         cfg.load(Settings.file);
                         cfg1.load(Messages.file);
-                        cfg2.load(CMDmute.file);
+                        cfg2.load(CMDMute.file);
                         cfg3.load(CMDchest.file);
                         cfg4.load(EVENTPlayers.file);
                     } catch (IOException e) {
