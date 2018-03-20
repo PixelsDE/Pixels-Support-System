@@ -75,4 +75,6 @@ commands:
     description: Reloads the Files of the Plugin!
   setcmd:
     description: Sets the Config of a Command! Do /setcmd <Config Command> <boolean>
+  settime:
+    description: Sets the Playertime to Day or Night!
     

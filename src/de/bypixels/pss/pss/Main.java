@@ -10,7 +10,6 @@ import de.bypixels.pss.CMDevents.EVENTdeath;
 import de.bypixels.pss.commands.*;
 import de.bypixels.pss.CMDevents.EVENTVanish;
 import de.bypixels.pss.gui.StartGUI;
-import de.bypixels.pss.onoff.ONOFF1;
 import de.bypixels.pss.onoff.ONOFF2;
 import de.bypixels.pss.util.Autoupdater;
 import de.bypixels.pss.util.Lag;
@@ -61,21 +60,19 @@ import java.util.ArrayList;
         Messages.setMessages();
         CMDmute.setmutes();
         CMDchest.setbackpack();
-        if (Settings.cfg.getBoolean("workmode") == true){
+        if (Settings.cfg.getBoolean("workmode") == true) {
             wartung = true;
-        }else{
+        } else {
             wartung = false;
         }
 
-        if (Settings.cfg.getBoolean("pvp") == false){
+        if (Settings.cfg.getBoolean("pvp") == false) {
             ONOFF2.pvp = false;
-        }else{
+        } else {
             ONOFF2.pvp = true;
         }
 
         init();
-
-
 
 
         new Autoupdater(this).checkUpdate("41971");
@@ -147,12 +144,14 @@ import java.util.ArrayList;
         getCommand("ping").setExecutor(new CMDping(this));
 
         getCommand("socialspy").setExecutor(new CMDsocialspy(this));
+
+        getCommand("settime").setExecutor(new CMDsettime(this));
         /*  66 */
+
         pm.registerEvents(new de.bypixels.pss.CMDevents.EVENTInvClose(this), this);
         /*  67 */
         pm.registerEvents(new EVENTPlayers(this), this);
         /*  68 */
-        pm.registerEvents(new de.bypixels.pss.events.InvClick1(this), this);
         /*  69 */
         pm.registerEvents(new de.bypixels.pss.events.InvClick2(this), this);
         /*  70 */

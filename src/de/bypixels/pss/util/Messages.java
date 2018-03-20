@@ -107,6 +107,8 @@ public class Messages {
         cfg.addDefault("socialspy1", "&aYou are now in the Socialspy-Mode!");
         cfg.addDefault("socialspy2", "&cYou are not longer in the Socialspy-Mode!");
         cfg.addDefault("setcmd", "&aYou have set the Config of the Command &6%command% &ato: &6%what%&a!");
+        cfg.addDefault("Time_Day", "&7Your Playertime is now Day!");
+        cfg.addDefault("Time_Night", "&7Your Playertime is now Night!");
 
 
         cfg.options().copyDefaults(true);
