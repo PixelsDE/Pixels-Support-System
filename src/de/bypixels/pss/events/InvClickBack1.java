@@ -33,7 +33,7 @@ import org.bukkit.entity.Player;
 /* 31 */           event.getWhoClicked().closeInventory();
 /* 32 */           Player player = (Player)event.getWhoClicked();
 
-                    player.playSound(player.getLocation(), Sound.ANVIL_LAND, 1,1);
+                    player.playSound(player.getLocation(), Sound.BLOCK_ANVIL_LAND, 1,1);
 /* 33 */           ((Player)event.getWhoClicked()).performCommand("gui");
 /*    */         }
 /*    */         else

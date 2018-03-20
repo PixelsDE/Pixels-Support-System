@@ -105,7 +105,7 @@ import org.bukkit.inventory.meta.ItemMeta;
                                 inv.setItem(a, glass);
                             }
                         }
-                        p.playSound(p.getLocation(), Sound.ANVIL_LAND, 1, 1);
+                        p.playSound(p.getLocation(), Sound.BLOCK_ANVIL_LAND, 1, 1);
                         p.openInventory(inv);
                     } else {
                         /* 54 */

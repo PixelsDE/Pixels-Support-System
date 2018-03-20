@@ -36,7 +36,7 @@ import org.bukkit.entity.Player;
 /* 33 */           ((Player)event.getWhoClicked()).performCommand("gui");
 
 
-                    player.playSound(player.getLocation(), Sound.ANVIL_LAND, 1,1);
+                    player.playSound(player.getLocation(), Sound.BLOCK_ANVIL_LAND, 1,1);
 /*    */         }
 /*    */         else
 /*    */         {

@@ -19,7 +19,7 @@ import org.bukkit.entity.Player;
 /*    */
 /*    */
 /*    */
-/*    */ public class CMDplayers implements CommandExecutor
+/*    */ public class CMDPlayers implements CommandExecutor
         /*    */ {
     /*    */
     /* 20 */   public static boolean getPlayers = true;
@@ -27,7 +27,7 @@ import org.bukkit.entity.Player;
 
     /*    */
     /*    */
-    public CMDplayers(Main plugin)
+    public CMDPlayers(Main plugin)
     /*    */ {
         /* 17 */
         this.plugin = plugin;
@@ -116,7 +116,7 @@ import org.bukkit.entity.Player;
 }
 
 
-/* Location:              C:\Users\Daniel\Downloads\PSS.jar!\Commands\CMDplayers.class
+/* Location:              C:\Users\Daniel\Downloads\PSS.jar!\Commands\CMDPlayers.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       0.7.1
  */

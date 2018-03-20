@@ -5,12 +5,14 @@ package de.bypixels.pss.CMDevents;
 
 import de.bypixels.pss.pss.Main;
 import de.bypixels.pss.util.Messages;
-import net.minecraft.server.v1_8_R3.PacketPlayOutExplosion;
-import net.minecraft.server.v1_8_R3.Vec3D;
+
+import net.minecraft.server.v1_12_R1.PacketPlayOutExplosion;
+import net.minecraft.server.v1_12_R1.Vec3D;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
-import org.bukkit.craftbukkit.v1_8_R3.entity.CraftPlayer;
+
+import org.bukkit.craftbukkit.v1_12_R1.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

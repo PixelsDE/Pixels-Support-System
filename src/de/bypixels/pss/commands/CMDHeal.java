@@ -19,13 +19,13 @@ import org.bukkit.entity.Player;
 /*    */
 /*    */
 /*    */
-/*    */ public class CMDheal implements org.bukkit.command.CommandExecutor
+/*    */ public class CMDHeal implements org.bukkit.command.CommandExecutor
         /*    */ {
     /*    */   private Main plugin;
 
     /*    */
     /*    */
-    public CMDheal(Main plugin)
+    public CMDHeal(Main plugin)
     /*    */ {
         /* 17 */
         this.plugin = plugin;
@@ -236,7 +236,7 @@ import org.bukkit.entity.Player;
 }
 
 
-/* Location:              C:\Users\Daniel\Downloads\PSS.jar!\Commands\CMDheal.class
+/* Location:              C:\Users\Daniel\Downloads\PSS.jar!\Commands\CMDHeal.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       0.7.1
  */

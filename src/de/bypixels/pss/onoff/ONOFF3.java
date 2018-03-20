@@ -251,7 +251,7 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 
 
 
-                p.playSound(p.getLocation(), Sound.LEVEL_UP, 1,1);
+                p.playSound(p.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1,1);
                 if (event.getWhoClicked().hasPermission("pss.gui")) {
                     /* 140 */
                     event.setCancelled(true);

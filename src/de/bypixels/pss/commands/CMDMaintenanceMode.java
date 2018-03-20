@@ -24,14 +24,14 @@ import java.io.IOException;
 /*    */
 /*    */
 /*    */
-/*    */ public class CMDmaintenancemode
+/*    */ public class CMDMaintenanceMode
         /*    */ implements CommandExecutor
         /*    */ {
     /*    */   private Main plugin;
 
     /*    */
     /*    */
-    public CMDmaintenancemode(Main plugin)
+    public CMDMaintenanceMode(Main plugin)
     /*    */ {
         /* 20 */
         this.plugin = plugin;
@@ -140,7 +140,7 @@ import java.io.IOException;
 
 
 
-/* Location:              C:\Users\Daniel\Downloads\PSS.jar!\Commands\CMDmaintenancemode.class
+/* Location:              C:\Users\Daniel\Downloads\PSS.jar!\Commands\CMDMaintenanceMode.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       0.7.1
  */

@@ -32,7 +32,7 @@ import org.bukkit.entity.Player;
 /*     */     {
         if (e.getCurrentItem().getType().equals(Material.STAINED_GLASS_PANE)) {
             Player  p = (Player) e.getWhoClicked();
-            p.playSound(e.getWhoClicked().getLocation(), Sound.LEVEL_UP, 1, 1);
+            p.playSound(e.getWhoClicked().getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 1);
         }
 /*  32 */       e.setCancelled(true);
 /*  33 */       if (e.getCurrentItem().getType().equals(Material.DIAMOND))
@@ -203,7 +203,7 @@ import org.bukkit.entity.Player;
                     inv1.setItem(a, glass);
                 }
             }  Player p = (Player)e.getWhoClicked();
-            p.playSound(p.getLocation(), Sound.ANVIL_LAND, 1,1);
+            p.playSound(p.getLocation(), Sound.BLOCK_ANVIL_LAND, 1,1);
 /* 191 */         e.getWhoClicked().openInventory(inv1);
 /*     */       }
 /*     */       else

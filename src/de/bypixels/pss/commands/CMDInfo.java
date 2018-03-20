@@ -12,14 +12,14 @@ import org.bukkit.Bukkit;
 /*    */
 /*    */ import org.bukkit.entity.Player;
 /*    */ 
-/*    */ public class CMDinfo
+/*    */ public class CMDInfo
 /*    */   implements CommandExecutor
 /*    */ {
     /*    */   private Main plugin;
 
     /*    */
     /*    */
-    public CMDinfo(Main plugin)
+    public CMDInfo(Main plugin)
     /*    */ {
         /* 20 */
         this.plugin = plugin;
@@ -74,7 +74,7 @@ import org.bukkit.Bukkit;
     }
 }
 
-/* Location:              C:\Users\Daniel\Downloads\PSS.jar!\Commands\CMDinfo.class
+/* Location:              C:\Users\Daniel\Downloads\PSS.jar!\Commands\CMDInfo.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       0.7.1
  */

@@ -3,22 +3,24 @@ package de.bypixels.pss.commands;
 import de.bypixels.pss.pss.Main;
 import de.bypixels.pss.util.Messages;
 import de.bypixels.pss.util.Settings;
-import net.minecraft.server.v1_8_R3.EntityPlayer;
+
+import net.minecraft.server.v1_12_R1.EntityPlayer;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
-import org.bukkit.craftbukkit.v1_8_R3.entity.CraftPlayer;
+
+import org.bukkit.craftbukkit.v1_12_R1.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 
-public class CMDping implements CommandExecutor {
+public class CMDPing implements CommandExecutor {
 
 
     private Main plugin;
 
 
-    public CMDping (Main plugin) {
+    public CMDPing(Main plugin) {
         this.plugin = plugin;
     }
 

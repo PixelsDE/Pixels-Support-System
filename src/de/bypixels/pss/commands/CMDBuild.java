@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-/*     */ public class CMDbuild
+/*     */ public class CMDBuild
         /*     */ implements CommandExecutor {
 
     /*  32 */   public static ArrayList<Player> buildlist = new ArrayList();
@@ -26,7 +26,7 @@ import java.util.List;
     /*  34 *
     /*     */   private Main plugin;
 
-    public CMDbuild(Main plugin)
+    public CMDBuild(Main plugin)
         /*     */ {
         /*  26 */
         this.plugin = plugin;
@@ -188,7 +188,7 @@ import java.util.List;
 }
 
 
-/* Location:              C:\Users\Daniel\Downloads\PSS.jar!\Commands\CMDbuild.class
+/* Location:              C:\Users\Daniel\Downloads\PSS.jar!\Commands\CMDBuild.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       0.7.1
  */

@@ -195,7 +195,7 @@ import java.io.IOException;
 
                 Player player = (Player)event.getWhoClicked();
 
-                player.playSound(player.getLocation(), Sound.LEVEL_UP, 1,1);
+                player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1,1);
 
                 if (event.getWhoClicked().hasPermission("pss.gui")) {
                     /*  88 */

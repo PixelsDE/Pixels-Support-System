@@ -33,7 +33,7 @@ import java.util.List;
 /*    */
 /*    */
 /*    */
-/*    */ public class CMDvanish
+/*    */ public class CMDVanish
         /*    */ implements CommandExecutor
         /*    */ {
     /*    */
@@ -45,7 +45,7 @@ import java.util.List;
 
     /*    */
     /*    */
-    public CMDvanish(Main plugin)
+    public CMDVanish(Main plugin)
     /*    */ {
         /* 26 */
         this.plugin = plugin;
@@ -209,9 +209,3 @@ import java.util.List;
     }
     /*    */
 }
-
-
-/* Location:              C:\Users\Daniel\Downloads\PSS.jar!\Commands\CMDvanish.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       0.7.1
- */

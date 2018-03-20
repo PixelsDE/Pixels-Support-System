@@ -6,7 +6,7 @@ package de.bypixels.pss.commands;
 // Date: 07.02.2018 
 // Copyright PixelsDE 
 
-import com.avaje.ebeaninternal.server.core.Message;
+
 import de.bypixels.pss.CMDevents.EVENTPlayers;
 import de.bypixels.pss.pss.Main;
 import de.bypixels.pss.util.Messages;

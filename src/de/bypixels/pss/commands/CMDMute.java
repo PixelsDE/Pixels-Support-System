@@ -28,12 +28,12 @@ import java.util.ArrayList;
 /*    */
 /*    */
 /*    */ 
-/*    */ public class CMDmute
+/*    */ public class CMDMute
 /*    */   implements CommandExecutor
 /*    */ {
 /*    */   private Main plugin;
 /*    */   
-/*    */   public CMDmute(Main plugin)
+/*    */   public CMDMute(Main plugin)
 /*    */   {
 /* 21 */     this.plugin = plugin;
 /*    */   }
@@ -149,7 +149,7 @@ public static void setmutes(){
 /*    */ }
 
 
-/* Location:              C:\Users\Daniel\Downloads\PSS.jar!\Commands\CMDmute.class
+/* Location:              C:\Users\Daniel\Downloads\PSS.jar!\Commands\CMDMute.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       0.7.1
  */
